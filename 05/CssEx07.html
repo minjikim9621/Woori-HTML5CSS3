@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 클래스 선택자는 시작할 때 .을 찍지만
+           아이디 선택자는 #을 사용한다.
+           2. 클래스 선택자는 스타일의 중복을 허용하지만
+           아이디 선택자는 스타일의 중복을 허용하지 않는다. */
+        #container {
+            width:600px;
+            padding:15px;
+            border: 1px solid gray;
+        }
+        .bluetext {
+            color:blue;
+        }
+        h2.accent {
+            background-color: #222;
+            color:#fff;
+            padding:5px;
+        }
+        .browntext {
+            color:brown;
+        }
+        .boldtext {
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+    <div id=-container>
+        <h1>회사 소개</h1>
+        <h2 class="accent">“사람을 구체적으로 도와주는 책”</h2>
+        <p>이지스퍼블리싱(주)의 책에는 <span class="browntext boldtext">‘사람들에게 구체적으로 도움이 되는 책’을<br>
+            만든다는 출판 가치가 담겨 있습니다.</p></span>
+        <p>2010년 5월 출범한 이지스퍼블리싱(주)는 크게 두 영역의 책을 출간합니다.<br>
+            IT 실용 도서와 학습 분야 도서입니다. IT 교재와 사진 책 등 실용서는 이지스퍼블리싱 브랜드로,<br>
+            학습과 자녀교육 도서는 이지스에듀 브랜드로 출간하고 있습니다.</p>
+        <h2 class="bluetext">이지스퍼블리싱의 미션</h2>
+        <section>
+        <p>
+            사람에게 구체적으로 <span class="bluetext">도움</span>을 주는 책<br>
+            우리는 열심히 사는 사람들에게 도움이 되고 싶습니다.<br>
+            우리는 책을 출간하기 전에 질문할 것입니다.<br>
+            "이 책이 사람들에게 도움이 됩니까?"
+        </p>
+        </section>
+        <p class="bluetext">정보의 지름길을 만들어 빠르게 원하는 곳으로 가도록 도와주는 책.<br>
+        손에 잡히는 이익을 얻을 수 있도록 도움이 되는 책을 만들고 싶습니다.</p>
+    </div>
+    <!-- <span style="background-color:yellow;"> span1 </span><br>
+    <span style="background-color:plum;"> span2 </span><br>
+    <span style="background-color:green;"> span3 </span>
+    <div style="background-color:aqua;"> div1 </div> -->
+    <!-- div 태그와 span 태그의 차이점
+    텍스트나 인라인 콘텐츠의 특정한 부분을 지정하여
+    스타일 값을 지정할 수 있다. div 태그와의 차이점이라고 한다면
+    span은 인라인 요소이기 때문에 텍스트 줄내에서 사용되면 새 줄을
+    만들지 않는다. 그렇기 때문에 아래처럼 span을 연속해서 사용했을 때에도
+    필요한 만큼만 너비만 차지하고 다음 칸으로 넘어가지 않는다.-->
+    <!-- class 선택자를 사용하는 이유
+    같은 태그라도 다른 스타일을 지정하기 위해서,
+    둘 이상의 스타일을 동시에 지정하기 위해서 -->
+</body>
+</html>

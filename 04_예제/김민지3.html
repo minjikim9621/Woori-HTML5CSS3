@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            margin: 20px;
+        }
+        div.centered {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>로그인</legend>
+        <label>아이디 <input type="text" id="id" autofocus required></label>
+        <label>비밀번호 <input type="password" id="pw"></label>
+        <input type="button" value="로그인">
+    </fieldset>
+    <fieldset>
+        <legend>가입하기</legend>
+        <ul>
+            <li><label>아이디 * <input type="text" id="id"></label></li>
+            <li><label>비밀번호 * <input type="password" id="pw"></label></li>
+            <li><label>비밀번호 확인 * <input type="password" id="pw"></label></li>
+            <li><label>이름 * <input type="text" id="name"></label></li>
+            <li><label>메일 주소 * <input type="email" id="mail"></label></li>
+            <li><label>전화번호 * <input type="tel" id="number" placeholder="010-"></label></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>이지스퍼블리싱</legend>
+        <ul>
+            <li>
+                <label for="comment" class="title"></label>
+                <textarea style="font-size: 16px;" cols="70" rows="3" id="comment">열심히 사는 사람들의 손을 잡아주는 곳 = 이지스퍼블리싱
+
+우리는 책을 내기 전에 다시 한 번 물어봅니다.
+"이 책이 사람들에게 도움이 되는가?"</textarea>
+            </li>
+        </ul>
+    </fieldset>
+    <form action="result.php" method="post">
+        <fieldset>
+        <div class="centered">
+            <input type="submit" value="가입하기">
+            <input type="reset" value="다시쓰기">
+        </div>
+        </fieldset>
+    </form>
+</form>    
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form ul li{
+               list-style:none; 
+               margin: 15px;	
+               font-size:20px;	
+            }
+   </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <ul>
+            <li>
+                <label for="firstname">First name: </label>
+                <input type="text" id="firstname" autofocus required>
+            </li>
+            <li>
+                <label for="lastname">Last name: </label>
+                <input type="text" id="lastname">
+            </li>
+            <li>
+                <label for="mail">Email: </label>
+                <input type="text" id="mail" placeholder="             @gmail.com">
+            </li>
+            <li>
+                <label>Gender: <input type="radio" name="subject" value="Gender">Male, </label>
+                <label><input type="radio" name="subject" value="Female">Female</label>
+            </li>
+            <li>
+                <label>Favorite: <input type="checkbox" name="project1" value="html">HTML, </label>
+                <label><input type="checkbox" name="project2" value="java">Java, </label>
+                <label><input type="checkbox" name="project3" value="php">PHP</label>
+            </li>
+                <label class="reg" for="class" style="font-size: 20px;">University : </label>
+                <input type="text" id="univ">
+                <datalist id="univ">
+                    <option value="대학교" label="Gachon">Gachon University</option>
+					<option value="대학교" label="another"></option>
+                </datalist>
+                </select>
+            <li>
+            <label>Color: <input type="color" value="#00ff00"></label>
+            </li>
+            <li>
+            <label>Date : <input type="date" id="today"></label>
+            </li>
+            <form action="reg.php" method="post">
+                <input type="submit" value="Registration">
+            </form>
+        </ul>
+    </fieldset>
+</form>
+</body>
+</html>
