@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        margin: 100px;
+        border: 1px solid black;
+        background: #0094ff;
+      }
+      .box {
+        -webkit-transition: 2s ease-in;
+        -moz-transition: 2s ease-in;
+        -o-transition: 2s ease-in;
+        transition: 2s ease-in;
+      }
+      .box:hover {
+        -webkit-transform: scale(2) perspective(120px) rotatex(180deg);
+        -moz-transform: scale(2) perspective(120px) rotatex(180deg);
+        -o-transform: scale(2) perspective(120px) rotatex(180deg);
+        -ms-transform: scale(2) perspective(120px) rotatex(180deg);
+        transform: scale(2) perspective(120px) rotatex(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
